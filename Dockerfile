@@ -10,7 +10,7 @@ RUN echo 'deb http://packages.elasticsearch.org/logstash/1.4/debian stable main'
 RUN apt-get -yqq update
 RUN apt-get -yqq install logstash
 
-ADD logstash.conf /etc/
+ADD files/logstash.conf /etc/
 
 WORKDIR /opt/logstash
 
